@@ -1,0 +1,5 @@
+﻿  Order.cpp
+  Wallet.cpp
+  Generating Code...
+Wallet.obj : error LNK2019: unresolved external symbol "void __cdecl readName(char *,unsigned short)" (?readName@@YAXPADG@Z) referenced in function "void __cdecl addWallet(void)" (?addWallet@@YAXXZ)
+G:\fmi\source\repos\FMIcoin\Debug\FMIcoin.exe : fatal error LNK1120: 1 unresolved externals
