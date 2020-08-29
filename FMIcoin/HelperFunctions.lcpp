@@ -1,0 +1,34 @@
+#include <iostream>
+#include "HelperFunctions.h"
+#include "math.h"
+
+using std::cin;
+
+const double EPS = 0.0001;
+
+// found it in internet
+void readName(char* name, unsigned short size) {
+	while (cin && isspace(cin.peek()))
+		cin.ignore();
+	cin.getline(name, size);
+	if (cin.fail())
+	{
+		cin.clear();
+		while (cin && '\n' != cin.get());
+	}
+	cin.clear();
+}
+
+
+
+int compareFloat(const double num1, const double num2) {
+	if (fabs(num1 - num2) <= EPS) {
+		return 0; // num1 == num2
+	}
+	else if (num1 > num2) {
+		return 1; // num1 > num2
+	}
+	else {
+		return -1; // num1 < num2
+	}
+}

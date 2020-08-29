@@ -1,0 +1,8 @@
+#pragma once
+
+
+void readName(char*, unsigned short);
+
+
+int compareFloat(const double, const double);
+
